@@ -5,9 +5,9 @@ import { InquiryForm } from "@/components/InquiryForm";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — AeroLuxe International" },
-      { name: "description", content: "Reach AeroLuxe's concierge desk in Dubai, London or New York. We respond within 2 business hours." },
-      { property: "og:title", content: "Contact — AeroLuxe International" },
+      { title: "Contact — 1 3 Kulture" },
+      { name: "description", content: "Reach 1 3 Kulture's concierge desk in Dubai, London or New York. We respond within 2 business hours." },
+      { property: "og:title", content: "Contact — 1 3 Kulture" },
       { property: "og:description", content: "Three offices, one concierge desk. Always on." },
       { property: "og:url", content: "/contact" },
     ],
@@ -48,9 +48,9 @@ function Contact() {
             <h2 className="font-display text-4xl md:text-5xl mb-6">Or write directly.</h2>
             <p className="text-cream/70 mb-8">Use the form, or reach the relevant desk below.</p>
             <ul className="space-y-4 text-cream/90">
-              <li className="flex items-center gap-3"><Mail className="w-5 h-5 text-accent" /> flights@aeroluxe.com</li>
-              <li className="flex items-center gap-3"><Mail className="w-5 h-5 text-accent" /> stays@aeroluxe.com</li>
-              <li className="flex items-center gap-3"><Mail className="w-5 h-5 text-accent" /> media@aeroluxe.com</li>
+              <li className="flex items-center gap-3"><Mail className="w-5 h-5 text-accent" /> flights@13kulture.com</li>
+              <li className="flex items-center gap-3"><Mail className="w-5 h-5 text-accent" /> stays@13kulture.com</li>
+              <li className="flex items-center gap-3"><Mail className="w-5 h-5 text-accent" /> media@13kulture.com</li>
               <li className="flex items-center gap-3"><Phone className="w-5 h-5 text-accent" /> +1 (555) 019-2834</li>
             </ul>
           </div>

@@ -7,9 +7,9 @@ import editing from "@/assets/editing.jpg";
 export const Route = createFileRoute("/media")({
   head: () => ({
     meta: [
-      { title: "Media, PR & Creative — AeroLuxe" },
+      { title: "Media, PR & Creative — 1 3 Kulture" },
       { name: "description", content: "Corporate videography, photo editing, brand PR and artist management for emerging artists and ambitious small brands." },
-      { property: "og:title", content: "Media, PR & Creative — AeroLuxe" },
+      { property: "og:title", content: "Media, PR & Creative — 1 3 Kulture" },
       { property: "og:description", content: "Videography, photo editing and PR for artists and brands." },
       { property: "og:url", content: "/media" },
     ],

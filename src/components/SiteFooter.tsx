@@ -1,20 +1,19 @@
 import { Link } from "@tanstack/react-router";
-import { Plane, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Instagram, Linkedin, Twitter } from "lucide-react";
+import logo from "@/assets/logo.jpeg.asset.json";
 
 export function SiteFooter() {
   return (
-    <footer className="bg-navy text-cream mt-32">
+    <footer className="bg-navy text-cream mt-32 border-t border-accent/20">
       <div className="container-x py-20">
         <div className="grid md:grid-cols-4 gap-12">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="w-8 h-8 rounded-full bg-accent flex items-center justify-center">
-                <Plane className="w-4 h-4 text-accent-foreground -rotate-45" />
-              </span>
-              <span className="font-display font-semibold">AeroLuxe<span className="text-accent">.</span></span>
+              <img src={logo.url} alt="1 3 Kulture logo" className="w-9 h-9 rounded-full object-cover ring-1 ring-accent/40" />
+              <span className="font-display font-semibold">1 3 <span className="text-accent">Kulture</span></span>
             </div>
             <p className="text-sm text-cream/70 leading-relaxed max-w-xs">
-              International travel, hospitality and creative services — engineered for the world's most discerning clients.
+              International travel, hospitality and creative services — rooted in culture, engineered for the world.
             </p>
           </div>
           <div>
@@ -34,11 +33,14 @@ export function SiteFooter() {
             </ul>
           </div>
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-accent mb-4">Offices</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-accent mb-4">Get in touch</h4>
             <ul className="space-y-2 text-sm text-cream/80">
-              <li>Dubai · DIFC</li>
-              <li>London · Mayfair</li>
-              <li>New York · Tribeca</li>
+              <li>
+                <a href="https://wa.me/2349169606650" target="_blank" rel="noopener noreferrer" className="hover:text-accent">
+                  WhatsApp: +234 916 960 6650
+                </a>
+              </li>
+              <li>Available 24/7 · Worldwide</li>
             </ul>
             <div className="flex gap-3 mt-5">
               <a href="#" aria-label="Instagram" className="w-9 h-9 rounded-full border border-cream/20 flex items-center justify-center hover:border-accent hover:text-accent"><Instagram className="w-4 h-4" /></a>
@@ -48,8 +50,8 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="mt-16 pt-8 border-t border-cream/10 flex flex-col md:flex-row justify-between gap-4 text-xs text-cream/50">
-          <p>© {new Date().getFullYear()} AeroLuxe International. All rights reserved.</p>
-          <p>hello@aeroluxe.com · +1 (555) 019-2834</p>
+          <p>© {new Date().getFullYear()} 1 3 Kulture. All rights reserved.</p>
+          <p>WhatsApp: +234 916 960 6650</p>
         </div>
       </div>
     </footer>

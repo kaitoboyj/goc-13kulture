@@ -4,9 +4,9 @@ import { ArrowRight } from "lucide-react";
 export const Route = createFileRoute("/careers")({
   head: () => ({
     meta: [
-      { title: "Careers — AeroLuxe International" },
-      { name: "description", content: "Join AeroLuxe — open roles across our flights, hospitality and media branches in Dubai, London and New York." },
-      { property: "og:title", content: "Careers — AeroLuxe International" },
+      { title: "Careers — 1 3 Kulture" },
+      { name: "description", content: "Join 1 3 Kulture — open roles across our flights, hospitality and media branches in Dubai, London and New York." },
+      { property: "og:title", content: "Careers — 1 3 Kulture" },
       { property: "og:description", content: "Open roles across flights, hospitality and media." },
       { property: "og:url", content: "/careers" },
     ],
@@ -49,7 +49,7 @@ function Careers() {
         </div>
       </section>
 
-      <section className="bg-cream py-24">
+      <section className="bg-card py-24">
         <div className="container-x grid md:grid-cols-3 gap-10">
           {[
             { t: "Global mobility", d: "Annual rotation between Dubai, London and New York for all staff." },

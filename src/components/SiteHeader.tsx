@@ -1,6 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X, Plane } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.jpeg.asset.json";
+
+const WHATSAPP_URL = "https://wa.me/2349169606650?text=" + encodeURIComponent("Hello 1 3 Kulture, I'd like to book a consultation.");
 
 const nav = [
   { to: "/", label: "Home" },
@@ -15,14 +18,12 @@ const nav = [
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/50">
+    <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/50">
       <div className="container-x flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2 group">
-          <span className="w-8 h-8 rounded-full bg-accent flex items-center justify-center">
-            <Plane className="w-4 h-4 text-accent-foreground -rotate-45" />
-          </span>
+          <img src={logo.url} alt="1 3 Kulture logo" className="w-9 h-9 rounded-full object-cover ring-1 ring-accent/40" />
           <span className="font-display font-semibold tracking-tight text-foreground">
-            AeroLuxe<span className="text-accent">.</span>
+            1 3 <span className="text-accent">Kulture</span>
           </span>
         </Link>
         <nav className="hidden lg:flex items-center gap-7">
@@ -38,12 +39,14 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <Link
-          to="/contact"
-          className="hidden lg:inline-flex h-10 items-center justify-center rounded-full bg-foreground text-background px-5 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition"
+        <a
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden lg:inline-flex h-10 items-center justify-center rounded-full bg-accent text-accent-foreground px-5 text-sm font-medium hover:opacity-90 transition"
         >
           Book a consultation
-        </Link>
+        </a>
         <button
           onClick={() => setOpen(!open)}
           className="lg:hidden p-2 text-foreground"
@@ -65,6 +68,14 @@ export function SiteHeader() {
                 {n.label}
               </Link>
             ))}
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex h-11 items-center justify-center rounded-full bg-accent text-accent-foreground px-5 text-sm font-medium"
+            >
+              Book a consultation
+            </a>
           </div>
         </div>
       )}

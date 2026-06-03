@@ -13,6 +13,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
+import logoAsset from "../assets/logo.jpeg.asset.json";
 
 function NotFoundComponent() {
   return (
@@ -79,14 +80,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "AeroLuxe International — Fly. Stay. Create." },
-      { name: "description", content: "International private and business class flight booking, luxury hospitality, and corporate media & PR services for artists and brands." },
-      { property: "og:site_name", content: "AeroLuxe International" },
+      { title: "1 3 Kulture — International Flights, Hospitality & Media" },
+      { name: "description", content: "1 3 Kulture: international flight booking, luxury hospitality, and corporate media & PR services for artists and brands." },
+      { property: "og:site_name", content: "1 3 Kulture" },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: logoAsset.url },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: logoAsset.url },
+      { name: "theme-color", content: "#000000" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/jpeg", href: logoAsset.url },
+      { rel: "apple-touch-icon", href: logoAsset.url },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" },
