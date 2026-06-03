@@ -14,9 +14,9 @@ import destTokyo from "@/assets/dest-tokyo.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AeroLuxe International — Fly Beyond Borders" },
+      { title: "1 3 Kulture — Fly Beyond Borders" },
       { name: "description", content: "Premium international private and business class flights, luxury hospitality, and creative media services. Three branches, one standard: extraordinary." },
-      { property: "og:title", content: "AeroLuxe International — Fly Beyond Borders" },
+      { property: "og:title", content: "1 3 Kulture — Fly Beyond Borders" },
       { property: "og:description", content: "International flights, hospitality and creative media for the world's most discerning clients." },
       { property: "og:url", content: "/" },
     ],
@@ -82,10 +82,10 @@ function Home() {
             Three branches under one roof: international flight booking, hospitality, and creative media for artists and brands worth remembering.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link to="/flights" className="inline-flex items-center gap-2 h-12 px-6 rounded-full bg-accent text-accent-foreground font-medium hover:bg-cream transition">
+            <Link to="/flights" className="inline-flex items-center gap-2 h-12 px-6 rounded-full bg-accent text-accent-foreground font-medium hover:bg-card transition">
               Book a flight <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link to="/contact" className="inline-flex items-center gap-2 h-12 px-6 rounded-full border border-cream/40 text-cream hover:bg-cream/10 transition">
+            <Link to="/contact" className="inline-flex items-center gap-2 h-12 px-6 rounded-full border border-cream/40 text-cream hover:bg-card/10 transition">
               Speak with concierge
             </Link>
           </div>
@@ -180,7 +180,7 @@ function Home() {
           </div>
         </div>
         <div>
-          <p className="text-accent uppercase tracking-[0.3em] text-xs mb-3">Why AeroLuxe</p>
+          <p className="text-accent uppercase tracking-[0.3em] text-xs mb-3">Why 1 3 Kulture</p>
           <h2 className="font-display text-4xl md:text-5xl mb-6 text-balance">A travel house that thinks like a creative studio.</h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
             We started as a private flights desk for touring artists. Today we book international travel, host stays in three continents, and produce the campaigns those artists need when they land.
@@ -214,7 +214,7 @@ function Home() {
           <p className="mt-6 text-background/70 max-w-xl mx-auto">
             Tell us where you want to be — we will handle the flight, the stay, and the story.
           </p>
-          <Link to="/contact" className="inline-flex items-center gap-2 mt-10 h-12 px-8 rounded-full bg-accent text-accent-foreground font-medium hover:bg-cream transition">
+          <Link to="/contact" className="inline-flex items-center gap-2 mt-10 h-12 px-8 rounded-full bg-accent text-accent-foreground font-medium hover:bg-card transition">
             Start your inquiry <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

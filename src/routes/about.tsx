@@ -4,10 +4,10 @@ import windowView from "@/assets/window-view.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — AeroLuxe International" },
-      { name: "description", content: "AeroLuxe started as a private flights desk for touring artists. Today we span three branches: flights, hospitality, and creative media." },
-      { property: "og:title", content: "About — AeroLuxe International" },
-      { property: "og:description", content: "The story behind AeroLuxe — a travel house that thinks like a creative studio." },
+      { title: "About — 1 3 Kulture" },
+      { name: "description", content: "1 3 Kulture started as a private flights desk for touring artists. Today we span three branches: flights, hospitality, and creative media." },
+      { property: "og:title", content: "About — 1 3 Kulture" },
+      { property: "og:description", content: "The story behind 1 3 Kulture — a travel house that thinks like a creative studio." },
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
@@ -31,7 +31,7 @@ function About() {
           A travel house that thinks <span className="italic text-accent">like a creative studio.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-muted-foreground text-lg leading-relaxed">
-          AeroLuxe began in 2014 when our founder, frustrated by the gap between commercial booking platforms and the realities of an artist on tour, opened a private flights desk above a coffee shop in DIFC. A decade later, that desk has become three branches operating across Dubai, London and New York.
+          1 3 Kulture began in 2014 when our founder, frustrated by the gap between commercial booking platforms and the realities of an artist on tour, opened a private flights desk above a coffee shop in DIFC. A decade later, that desk has become three branches operating across Dubai, London and New York.
         </p>
       </section>
 

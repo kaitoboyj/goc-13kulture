@@ -7,9 +7,9 @@ import hotelSuite from "@/assets/hotel-suite.jpg";
 export const Route = createFileRoute("/hospitality")({
   head: () => ({
     meta: [
-      { title: "Hospitality & Hosting — AeroLuxe" },
+      { title: "Hospitality & Hosting — 1 3 Kulture" },
       { name: "description", content: "Luxury hospitality, concierge stays, and bespoke event hosting in Dubai, London, New York and beyond." },
-      { property: "og:title", content: "Hospitality & Hosting — AeroLuxe" },
+      { property: "og:title", content: "Hospitality & Hosting — 1 3 Kulture" },
       { property: "og:description", content: "Curated stays, concierge, and event hosting worldwide." },
       { property: "og:url", content: "/hospitality" },
     ],
@@ -44,7 +44,7 @@ function Hospitality() {
         ))}
       </section>
 
-      <section className="bg-cream py-24">
+      <section className="bg-card py-24">
         <div className="container-x grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-accent uppercase tracking-[0.3em] text-xs mb-3">Featured property</p>

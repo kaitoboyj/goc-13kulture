@@ -13,9 +13,9 @@ import windowView from "@/assets/window-view.jpg";
 export const Route = createFileRoute("/flights")({
   head: () => ({
     meta: [
-      { title: "International Flight Booking — AeroLuxe" },
+      { title: "International Flight Booking — 1 3 Kulture" },
       { name: "description", content: "Private jet charter, business class international flights, and corporate group travel. International routes only — no local flights." },
-      { property: "og:title", content: "International Flight Booking — AeroLuxe" },
+      { property: "og:title", content: "International Flight Booking — 1 3 Kulture" },
       { property: "og:description", content: "Premium international flights & private jet charter." },
       { property: "og:url", content: "/flights" },
     ],
