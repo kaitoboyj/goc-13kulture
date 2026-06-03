@@ -1,0 +1,73 @@
+import { Link } from "@tanstack/react-router";
+import { useState } from "react";
+import { Menu, X, Plane } from "lucide-react";
+
+const nav = [
+  { to: "/", label: "Home" },
+  { to: "/flights", label: "Flights" },
+  { to: "/hospitality", label: "Hospitality" },
+  { to: "/media", label: "Media & PR" },
+  { to: "/about", label: "About" },
+  { to: "/careers", label: "Careers" },
+  { to: "/contact", label: "Contact" },
+];
+
+export function SiteHeader() {
+  const [open, setOpen] = useState(false);
+  return (
+    <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/50">
+      <div className="container-x flex items-center justify-between h-16">
+        <Link to="/" className="flex items-center gap-2 group">
+          <span className="w-8 h-8 rounded-full bg-accent flex items-center justify-center">
+            <Plane className="w-4 h-4 text-accent-foreground -rotate-45" />
+          </span>
+          <span className="font-display font-semibold tracking-tight text-foreground">
+            AeroLuxe<span className="text-accent">.</span>
+          </span>
+        </Link>
+        <nav className="hidden lg:flex items-center gap-7">
+          {nav.map((n) => (
+            <Link
+              key={n.to}
+              to={n.to}
+              activeProps={{ className: "text-accent" }}
+              activeOptions={{ exact: n.to === "/" }}
+              className="text-sm text-foreground/80 hover:text-accent transition-colors"
+            >
+              {n.label}
+            </Link>
+          ))}
+        </nav>
+        <Link
+          to="/contact"
+          className="hidden lg:inline-flex h-10 items-center justify-center rounded-full bg-foreground text-background px-5 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition"
+        >
+          Book a consultation
+        </Link>
+        <button
+          onClick={() => setOpen(!open)}
+          className="lg:hidden p-2 text-foreground"
+          aria-label="Toggle menu"
+        >
+          {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+        </button>
+      </div>
+      {open && (
+        <div className="lg:hidden border-t border-border bg-background">
+          <div className="container-x py-4 flex flex-col gap-3">
+            {nav.map((n) => (
+              <Link
+                key={n.to}
+                to={n.to}
+                onClick={() => setOpen(false)}
+                className="text-base text-foreground/90 py-2"
+              >
+                {n.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+    </header>
+  );
+}
