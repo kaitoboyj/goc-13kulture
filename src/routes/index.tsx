@@ -1,9 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Plane, Hotel, Camera, Globe2, Award, Clock } from "lucide-react";
-import heroVideo from "@/assets/hero-video.mp4.asset.json";
+import { ArrowRight, Plane, Camera, Globe2, Award, Clock } from "lucide-react";
 import heroJet from "@/assets/hero-jet.jpg";
 import windowView from "@/assets/window-view.jpg";
-import hospitality from "@/assets/hospitality.jpg";
 import mediaShoot from "@/assets/media-shoot.jpg";
 import destDubai from "@/assets/dest-dubai.jpg";
 import destLondon from "@/assets/dest-london.jpg";
@@ -14,10 +12,10 @@ import destTokyo from "@/assets/dest-tokyo.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "1 3 Kulture — Fly Beyond Borders" },
-      { name: "description", content: "Premium international private and business class flights, luxury hospitality, and creative media services. Three branches, one standard: extraordinary." },
-      { property: "og:title", content: "1 3 Kulture — Fly Beyond Borders" },
-      { property: "og:description", content: "International flights, hospitality and creative media for the world's most discerning clients." },
+      { title: "13KULTURE — Documenting Culture. Creating Legacy." },
+      { name: "description", content: "Premium photography, videography, and creative media coverage for artists, brands, events, and cultural movements. Rooted in purpose. Growing through creativity." },
+      { property: "og:title", content: "13KULTURE — Documenting Culture. Creating Legacy." },
+      { property: "og:description", content: "13Kulture is a creative media and cultural platform dedicated to documenting, amplifying, and shaping the next generation of African talent." },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -28,22 +26,15 @@ export const Route = createFileRoute("/")({
 const services = [
   {
     icon: Plane,
-    title: "International Flights",
-    desc: "Premium and business class international itineraries, plus on-demand private jet charter.",
+    title: "International Flights & PJ Bookings",
+    desc: "Premium and business class international itineraries, plus on-demand private jet charter and travel bookings.",
     href: "/flights",
     img: heroJet,
   },
   {
-    icon: Hotel,
-    title: "Hospitality & Hosting",
-    desc: "Curated luxury stays, concierge services and bespoke event hosting in the world's great cities.",
-    href: "/hospitality",
-    img: hospitality,
-  },
-  {
     icon: Camera,
     title: "Media, PR & Creative",
-    desc: "Corporate videography, photo editing and brand PR for artists and ambitious small brands.",
+    desc: "Photography, videography, creative direction, and brand PR for artists, events, and cultural movements.",
     href: "/media",
     img: mediaShoot,
   },
@@ -62,31 +53,27 @@ function Home() {
     <div>
       {/* HERO */}
       <section className="relative h-[92vh] min-h-[640px] overflow-hidden">
-        <video
+        <img
           className="absolute inset-0 w-full h-full object-cover"
-          src={heroVideo.url}
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster={heroJet}
+          src={heroJet}
+          alt="Private jet"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/40 to-navy/90" />
         <div className="absolute inset-0 container-x flex flex-col justify-end pb-20 md:pb-28">
-          <p className="text-accent uppercase tracking-[0.3em] text-xs mb-6 animate-fade-in">International · Since 2014</p>
+          <p className="text-accent uppercase tracking-[0.3em] text-xs mb-6 animate-fade-in">13KULTURE</p>
           <h1 className="font-display text-cream text-5xl md:text-7xl lg:text-8xl font-semibold max-w-5xl text-balance leading-[1.02]">
-            Fly beyond borders.<br />
-            <span className="text-accent italic font-normal">Stay</span> beyond ordinary.
+            Documenting Culture.<br />
+            <span className="text-accent italic font-normal">Creating</span> Legacy.
           </h1>
           <p className="mt-6 max-w-xl text-cream/80 text-lg">
-            Three branches under one roof: international flight booking, hospitality, and creative media for artists and brands worth remembering.
+            Premium photography, videography, and creative media coverage for artists, brands, events, and cultural movements.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link to="/flights" className="inline-flex items-center gap-2 h-12 px-6 rounded-full bg-accent text-accent-foreground font-medium hover:bg-card transition">
-              Book a flight <ArrowRight className="w-4 h-4" />
+            <Link to="/contact" className="inline-flex items-center gap-2 h-12 px-6 rounded-full bg-accent text-accent-foreground font-medium hover:bg-card transition">
+              Book a Session <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link to="/contact" className="inline-flex items-center gap-2 h-12 px-6 rounded-full border border-cream/40 text-cream hover:bg-card/10 transition">
-              Speak with concierge
+            <Link to="/media" className="inline-flex items-center gap-2 h-12 px-6 rounded-full border border-cream/40 text-cream hover:bg-card/10 transition">
+              Explore our work
             </Link>
           </div>
         </div>
@@ -115,11 +102,11 @@ function Home() {
           <div>
             <p className="text-accent uppercase tracking-[0.3em] text-xs mb-3">Our branches</p>
             <h2 className="font-display text-4xl md:text-5xl max-w-2xl text-balance">
-              Three disciplines. <span className="italic font-normal">One standard.</span>
+              Two disciplines. <span className="italic font-normal">One standard.</span>
             </h2>
           </div>
           <p className="text-muted-foreground max-w-md">
-            Each branch is led by specialists. Each engagement is treated like the only one. We do not do local flights — only international.
+            Each branch is led by specialists. Each engagement is treated like the only one.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
@@ -180,10 +167,10 @@ function Home() {
           </div>
         </div>
         <div>
-          <p className="text-accent uppercase tracking-[0.3em] text-xs mb-3">Why 1 3 Kulture</p>
-          <h2 className="font-display text-4xl md:text-5xl mb-6 text-balance">A travel house that thinks like a creative studio.</h2>
+          <p className="text-accent uppercase tracking-[0.3em] text-xs mb-3">Why 13Kulture</p>
+          <h2 className="font-display text-4xl md:text-5xl mb-6 text-balance">A cultural platform built on purpose and creativity.</h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            We started as a private flights desk for touring artists. Today we book international travel, host stays in three continents, and produce the campaigns those artists need when they land.
+            We started documenting culture for touring artists. Today we cover international events, produce campaigns, book PJ travel, and help artists and brands tell stories that last.
           </p>
           <div className="space-y-5">
             {[

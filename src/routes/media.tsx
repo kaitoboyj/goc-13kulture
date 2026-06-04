@@ -55,7 +55,7 @@ function Media() {
         <div className="container-x">
           <div className="flex items-end justify-between mb-12 flex-wrap gap-6">
             <h2 className="font-display text-4xl md:text-5xl">Recent work</h2>
-            <p className="text-cream/60 max-w-sm">Selected projects across music, fashion and hospitality clients.</p>
+            <p className="text-cream/60 max-w-sm">Selected projects across music, fashion and cultural events.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             <figure className="relative overflow-hidden rounded-2xl group">

@@ -1,14 +1,13 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.jpeg.asset.json";
+import logo from "@/assets/logo.jpeg";
 
 const WHATSAPP_URL = "https://wa.me/2349169606650?text=" + encodeURIComponent("Hello 1 3 Kulture, I'd like to book a consultation.");
 
 const nav = [
   { to: "/", label: "Home" },
   { to: "/flights", label: "Flights" },
-  { to: "/hospitality", label: "Hospitality" },
   { to: "/media", label: "Media & PR" },
   { to: "/about", label: "About" },
   { to: "/careers", label: "Careers" },
@@ -21,7 +20,7 @@ export function SiteHeader() {
     <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/50">
       <div className="container-x flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2 group">
-          <img src={logo.url} alt="1 3 Kulture logo" className="w-9 h-9 rounded-full object-cover ring-1 ring-accent/40" />
+          <img src={logo} alt="1 3 Kulture logo" className="w-9 h-9 rounded-full object-cover ring-1 ring-accent/40" />
           <span className="font-display font-semibold tracking-tight text-foreground">
             1 3 <span className="text-accent">Kulture</span>
           </span>

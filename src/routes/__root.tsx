@@ -13,7 +13,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
-import logoAsset from "../assets/logo.jpeg.asset.json";
+import logoAsset from "../assets/logo.jpeg";
 
 function NotFoundComponent() {
   return (
@@ -80,19 +80,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "1 3 Kulture — International Flights, Hospitality & Media" },
-      { name: "description", content: "1 3 Kulture: international flight booking, luxury hospitality, and corporate media & PR services for artists and brands." },
+      { title: "1 3 Kulture — Creative Media & Cultural Platform" },
+      { name: "description", content: "13Kulture: premium photography, videography, creative media, and PJ bookings for artists, brands, events, and cultural movements." },
       { property: "og:site_name", content: "1 3 Kulture" },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: logoAsset.url },
+      { property: "og:image", content: logoAsset },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: logoAsset.url },
+      { name: "twitter:image", content: logoAsset },
       { name: "theme-color", content: "#000000" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", type: "image/jpeg", href: logoAsset.url },
-      { rel: "apple-touch-icon", href: logoAsset.url },
+      { rel: "icon", type: "image/jpeg", href: logoAsset },
+      { rel: "apple-touch-icon", href: logoAsset },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" },

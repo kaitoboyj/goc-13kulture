@@ -47,12 +47,12 @@ export function InquiryForm({ defaultService }: { defaultService?: string }) {
         <option value="" disabled>Service of interest</option>
         <option>Private Jet Charter</option>
         <option>Business Class International</option>
-        <option>Hospitality & Stays</option>
         <option>Media, PR & Creative</option>
+        <option>PJ Bookings (Travels)</option>
       </select>
       <textarea name="message" required rows={4} maxLength={2000} placeholder="Tell us about your trip or project…" className="md:col-span-2 p-4 rounded-lg border border-border bg-card focus:outline-none focus:border-accent" />
       <button className="md:col-span-2 inline-flex items-center justify-center gap-2 h-12 rounded-full bg-accent text-accent-foreground font-medium hover:opacity-90 transition">
-        Submit inquiry via WhatsApp <ArrowRight className="w-4 h-4" />
+        Submit inquiry <ArrowRight className="w-4 h-4" />
       </button>
     </form>
   );

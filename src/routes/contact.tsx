@@ -17,9 +17,9 @@ export const Route = createFileRoute("/contact")({
 });
 
 const offices = [
-  { city: "Dubai", addr: "Gate Village 4, DIFC", tel: "+971 4 555 0192" },
-  { city: "London", addr: "12 Berkeley Square, Mayfair", tel: "+44 20 7946 0234" },
-  { city: "New York", addr: "100 Hudson St, Tribeca", tel: "+1 212 555 0192" },
+  { city: "Dubai", addr: "Gate Village 4, DIFC", tel: "+234 916 960 6650" },
+  { city: "London", addr: "12 Berkeley Square, Mayfair", tel: "+234 916 960 6650" },
+  { city: "New York", addr: "100 Hudson St, Tribeca", tel: "+234 916 960 6650" },
 ];
 
 function Contact() {
@@ -48,10 +48,8 @@ function Contact() {
             <h2 className="font-display text-4xl md:text-5xl mb-6">Or write directly.</h2>
             <p className="text-cream/70 mb-8">Use the form, or reach the relevant desk below.</p>
             <ul className="space-y-4 text-cream/90">
-              <li className="flex items-center gap-3"><Mail className="w-5 h-5 text-accent" /> flights@13kulture.com</li>
-              <li className="flex items-center gap-3"><Mail className="w-5 h-5 text-accent" /> stays@13kulture.com</li>
-              <li className="flex items-center gap-3"><Mail className="w-5 h-5 text-accent" /> media@13kulture.com</li>
-              <li className="flex items-center gap-3"><Phone className="w-5 h-5 text-accent" /> +1 (555) 019-2834</li>
+              <li className="flex items-center gap-3"><Mail className="w-5 h-5 text-accent" /> ohagwugabriel@gmail.com</li>
+              <li className="flex items-center gap-3"><Phone className="w-5 h-5 text-accent" /> +234 916 960 6650</li>
             </ul>
           </div>
           <div className="bg-background text-foreground p-8 rounded-2xl">

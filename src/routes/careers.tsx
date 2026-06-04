@@ -5,9 +5,9 @@ export const Route = createFileRoute("/careers")({
   head: () => ({
     meta: [
       { title: "Careers — 1 3 Kulture" },
-      { name: "description", content: "Join 1 3 Kulture — open roles across our flights, hospitality and media branches in Dubai, London and New York." },
-      { property: "og:title", content: "Careers — 1 3 Kulture" },
-      { property: "og:description", content: "Open roles across flights, hospitality and media." },
+      { name: "description", content: "Join 13Kulture — open roles across our media, flights, and creative branches." },
+      { property: "og:title", content: "Careers — 13Kulture" },
+      { property: "og:description", content: "Open roles across media, PR and flights." },
       { property: "og:url", content: "/careers" },
     ],
     links: [{ rel: "canonical", href: "/careers" }],
@@ -16,11 +16,10 @@ export const Route = createFileRoute("/careers")({
 });
 
 const roles = [
-  { t: "Senior Travel Concierge", l: "Dubai · Full-time", d: "Flights branch" },
-  { t: "Hospitality Partnerships Lead", l: "London · Full-time", d: "Hospitality branch" },
-  { t: "Director of Photography", l: "New York · Contract", d: "Media branch" },
+  { t: "Senior Travel Concierge", l: "Full-time", d: "Flights branch" },
+  { t: "Director of Photography", l: "Contract", d: "Media branch" },
   { t: "PR Account Manager", l: "Remote · Full-time", d: "Media branch" },
-  { t: "Night-shift Concierge", l: "Dubai · Full-time", d: "Flights branch" },
+  { t: "Creative Director", l: "Full-time", d: "Media branch" },
 ];
 
 function Careers() {

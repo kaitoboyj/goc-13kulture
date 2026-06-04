@@ -4,10 +4,10 @@ import windowView from "@/assets/window-view.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — 1 3 Kulture" },
-      { name: "description", content: "1 3 Kulture started as a private flights desk for touring artists. Today we span three branches: flights, hospitality, and creative media." },
-      { property: "og:title", content: "About — 1 3 Kulture" },
-      { property: "og:description", content: "The story behind 1 3 Kulture — a travel house that thinks like a creative studio." },
+      { title: "About — 13Kulture" },
+      { name: "description", content: "13Kulture is a creative media and cultural platform dedicated to documenting, amplifying, and shaping the next generation of African talent." },
+      { property: "og:title", content: "About — 13Kulture" },
+      { property: "og:description", content: "The story behind 13Kulture — a creative media and cultural platform rooted in purpose." },
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
@@ -16,10 +16,10 @@ export const Route = createFileRoute("/about")({
 });
 
 const timeline = [
-  { y: "2014", t: "Founded in Dubai", d: "As a 3-person private flights desk for touring musicians." },
-  { y: "2017", t: "London office opens", d: "Hospitality division launches with 40 European properties." },
-  { y: "2020", t: "Media branch", d: "Acquired a boutique creative studio to serve our artist clients." },
-  { y: "2024", t: "New York", d: "60+ countries served. Concierge of the Year award." },
+  { y: "2014", t: "Founded", d: "As a creative media desk documenting touring musicians and cultural events." },
+  { y: "2017", t: "Expanded", d: "Media division grows to cover fashion, art, and entertainment across West Africa." },
+  { y: "2020", t: "PJ Bookings", d: "Added private jet and international travel bookings to serve our artist clients." },
+  { y: "2024", t: "13Kulture today", d: "A full creative media and cultural platform — rooted in purpose, growing through creativity." },
 ];
 
 function About() {
@@ -28,10 +28,10 @@ function About() {
       <section className="container-x py-24 md:py-32">
         <p className="text-accent uppercase tracking-[0.3em] text-xs mb-4">About</p>
         <h1 className="font-display text-5xl md:text-7xl max-w-4xl text-balance leading-[1.05]">
-          A travel house that thinks <span className="italic text-accent">like a creative studio.</span>
+          Where Culture Lives. <span className="italic text-accent">Where Legacy Begins.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-muted-foreground text-lg leading-relaxed">
-          1 3 Kulture began in 2014 when our founder, frustrated by the gap between commercial booking platforms and the realities of an artist on tour, opened a private flights desk above a coffee shop in DIFC. A decade later, that desk has become three branches operating across Dubai, London and New York.
+          13Kulture is a creative media and cultural platform dedicated to documenting, amplifying, and shaping the next generation of African talent. Rooted in music, art, fashion, entertainment, and storytelling — we capture the moments that define culture and transform them into timeless visual experiences.
         </p>
       </section>
 
