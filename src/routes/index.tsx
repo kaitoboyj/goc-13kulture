@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Plane, Camera, Globe2, Award, Clock } from "lucide-react";
+import heroVideo from "@/assets/hero-video.mp4";
 import heroJet from "@/assets/hero-jet.jpg";
 import windowView from "@/assets/window-view.jpg";
 import mediaShoot from "@/assets/media-shoot.jpg";
@@ -53,10 +54,13 @@ function Home() {
     <div>
       {/* HERO */}
       <section className="relative h-[92vh] min-h-[640px] overflow-hidden">
-        <img
+        <video
           className="absolute inset-0 w-full h-full object-cover"
-          src={heroJet}
-          alt="Private jet"
+          src={heroVideo}
+          autoPlay
+          muted
+          loop
+          playsInline
         />
         <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/40 to-navy/90" />
         <div className="absolute inset-0 container-x flex flex-col justify-end pb-20 md:pb-28">

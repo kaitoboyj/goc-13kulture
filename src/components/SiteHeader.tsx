@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.jpeg";
+import logo from "@/assets/logo-new.jpeg";
 
 const WHATSAPP_URL = "https://wa.me/2349169606650?text=" + encodeURIComponent("Hello 1 3 Kulture, I'd like to book a consultation.");
 
