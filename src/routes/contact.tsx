@@ -6,9 +6,9 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — 1 3 Kulture" },
-      { name: "description", content: "Reach 1 3 Kulture's concierge desk in Dubai, London or New York. We respond within 2 business hours." },
+      { name: "description", content: "Reach 1 3 Kulture's concierge desk in Lagos, Nigeria. We respond within 2 business hours." },
       { property: "og:title", content: "Contact — 1 3 Kulture" },
-      { property: "og:description", content: "Three offices, one concierge desk. Always on." },
+      { property: "og:description", content: "One office, one concierge desk. Always on." },
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
@@ -17,9 +17,7 @@ export const Route = createFileRoute("/contact")({
 });
 
 const offices = [
-  { city: "Dubai", addr: "Gate Village 4, DIFC", tel: "+234 916 960 6650" },
-  { city: "London", addr: "12 Berkeley Square, Mayfair", tel: "+234 916 960 6650" },
-  { city: "New York", addr: "100 Hudson St, Tribeca", tel: "+234 916 960 6650" },
+  { city: "Lagos", addr: "Lagos, Nigeria", tel: "+234 916 960 6650" },
 ];
 
 function Contact() {
@@ -31,7 +29,7 @@ function Contact() {
         <p className="mt-6 text-muted-foreground text-lg max-w-2xl">Our concierge desk responds within 2 business hours, 24/7.</p>
       </section>
 
-      <section className="container-x pb-24 grid lg:grid-cols-3 gap-6">
+      <section className="container-x pb-24 grid lg:grid-cols-1 gap-6">
         {offices.map((o) => (
           <div key={o.city} className="p-8 rounded-2xl border border-border bg-card">
             <MapPin className="w-6 h-6 text-accent mb-4" />

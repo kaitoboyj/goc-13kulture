@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Linkedin, Twitter } from "lucide-react";
-import logo from "@/assets/logo.jpeg.asset.json";
+import logo from "@/assets/logo-new.jpeg";
 
 export function SiteFooter() {
   return (
@@ -9,7 +9,7 @@ export function SiteFooter() {
         <div className="grid md:grid-cols-4 gap-12">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src={logo.url} alt="1 3 Kulture logo" className="w-9 h-9 rounded-full object-cover ring-1 ring-accent/40" />
+              <img src={logo} alt="1 3 Kulture logo" className="w-9 h-9 rounded-full object-cover ring-1 ring-accent/40" />
               <span className="font-display font-semibold">1 3 <span className="text-accent">Kulture</span></span>
             </div>
             <p className="text-sm text-cream/70 leading-relaxed max-w-xs">
